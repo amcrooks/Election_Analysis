@@ -36,5 +36,22 @@ The analysis of the elction show that:
 
 
 ## Challenge Overview
+- We completed an election audit analysis to get the total number of votes casted in each county, we wanted to find which county had the biggest voter turnot, and get a conclusion on who won the election.
+
+## Election-Audit Results
+- How many votes were castede in the congressional election?
+  * Election Results
+    -------------------------
+    Total Votes: 369,711
+    -------------------------
+- Provide a breakdown of the number of votes and the precentage of total votes for each county in the precinct.
+  The county results were:
+      * Jefferson received 10.5% of the vote and 38,855 number of votes.
+      * Denver received 82.8% of the vote and 306,055 number of votes.
+      * Arapahoe reeived 6.7% of the vote and 24,801 number of votes.
+
+- Which county had the largest number of votes?
+- Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
+- Which candidate won the election, what was their cote count, and what eas their percentage of the cotes?
 
 ## Challenge Summary
