@@ -6,7 +6,7 @@ import csv
 import os
 
 # Add a variable to load a file from a path.
-file_to_load = os.path.join("..", "Resources", "election_results.csv")
+file_to_load = os.path.join("/Users/lexiec/Desktop/Analysis_Projects/Election_Analysis", "Resources", "election_results.csv")
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
@@ -75,7 +75,7 @@ with open(file_to_load) as election_data:
             county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
-        county_votes[county_name] =+ 1
+        county_votes[county_name] += 1
 
 
 # Save the results to our text file.
@@ -94,8 +94,10 @@ with open(file_to_save, "w") as txt_file:
 
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
+
         # 6b: Retrieve the county vote count.
         votes = county_votes[county_name]
+
         # 6c: Calculate the percentage of votes for the county.
         vote_percentage = float(votes) / float(total_votes) * 100
 
@@ -104,7 +106,7 @@ with open(file_to_save, "w") as txt_file:
             F"{county_name}: {vote_percentage:.1f}% ({votes:,}\n")
         print(county_results)
          # 6e: Save the county votes to a text file.
-
+        txt_file.write(county_results)
          # 6f: Write an if statement to determine the winning county and get its vote count.
         if (votes > lrg_county_count) and (vote_percentage > lrg_county_percentage):
             lrg_county_count = votes
@@ -119,6 +121,7 @@ with open(file_to_save, "w") as txt_file:
     print(largest_county_turnout)
 
     # 8: Save the county with the largest turnout to a text file.
+    txt_file.write(largest_county_turnout)
 
 
     # Save the final candidate vote count to the text file.
