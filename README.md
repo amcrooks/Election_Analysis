@@ -51,7 +51,20 @@ The analysis of the elction show that:
       * Arapahoe reeived 6.7% of the vote and 24,801 number of votes.
 
 - Which county had the largest number of votes?
+-------------------------
+Largest County Turnout: Denver
+-------------------------
 - Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-- Which candidate won the election, what was their cote count, and what eas their percentage of the cotes?
+    Charles Casper Stockham: 23.0% (85,213)
 
+    Diana DeGette: 73.8% (272,892)
+
+    Raymon Anthony Doane: 3.1% (11,606)
+- Which candidate won the election, what was their cote count, and what eas their percentage of the cotes?
+    -------------------------
+    Winner: Diana DeGette
+    Winning Vote Count: 272,892
+    Winning Percentage: 73.8%
+    -------------------------
 ## Challenge Summary
+  - This script could be great for all condidates running in an election. It gives the candidates a break down of votes cast and which counties are best for pitching their campaign in the future. The counites with bigger turnouts will have effect on their winning chances.
